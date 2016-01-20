@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FB58F721C501D4C0025F1BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB58F711C501D4C0025F1BF /* AppDelegate.swift */; };
+		3FB58F741C501D4C0025F1BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB58F731C501D4C0025F1BF /* ViewController.swift */; };
+		3FB58F771C501D4C0025F1BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB58F751C501D4C0025F1BF /* Main.storyboard */; };
+		3FB58F791C501D4C0025F1BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB58F781C501D4C0025F1BF /* Assets.xcassets */; };
+		3FB58F7C1C501D4C0025F1BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB58F7A1C501D4C0025F1BF /* LaunchScreen.storyboard */; };
+		3FB58F871C501D4D0025F1BF /* College_HackwichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB58F861C501D4D0025F1BF /* College_HackwichTests.swift */; };
+		3FB58F921C501D4D0025F1BF /* College_HackwichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB58F911C501D4D0025F1BF /* College_HackwichUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FB58F831C501D4D0025F1BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FB58F661C501D4C0025F1BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FB58F6D1C501D4C0025F1BF;
+			remoteInfo = "College Hackwich";
+		};
+		3FB58F8E1C501D4D0025F1BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FB58F661C501D4C0025F1BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FB58F6D1C501D4C0025F1BF;
+			remoteInfo = "College Hackwich";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FB58F6E1C501D4C0025F1BF /* College Hackwich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "College Hackwich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB58F711C501D4C0025F1BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FB58F731C501D4C0025F1BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FB58F761C501D4C0025F1BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FB58F781C501D4C0025F1BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FB58F7B1C501D4C0025F1BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FB58F7D1C501D4C0025F1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB58F821C501D4D0025F1BF /* College HackwichTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "College HackwichTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB58F861C501D4D0025F1BF /* College_HackwichTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College_HackwichTests.swift; sourceTree = "<group>"; };
+		3FB58F881C501D4D0025F1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB58F8D1C501D4D0025F1BF /* College HackwichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "College HackwichUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB58F911C501D4D0025F1BF /* College_HackwichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College_HackwichUITests.swift; sourceTree = "<group>"; };
+		3FB58F931C501D4D0025F1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FB58F6B1C501D4C0025F1BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB58F7F1C501D4D0025F1BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB58F8A1C501D4D0025F1BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FB58F651C501D4C0025F1BF = {
+			isa = PBXGroup;
+			children = (
+				3FB58F701C501D4C0025F1BF /* College Hackwich */,
+				3FB58F851C501D4D0025F1BF /* College HackwichTests */,
+				3FB58F901C501D4D0025F1BF /* College HackwichUITests */,
+				3FB58F6F1C501D4C0025F1BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FB58F6F1C501D4C0025F1BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FB58F6E1C501D4C0025F1BF /* College Hackwich.app */,
+				3FB58F821C501D4D0025F1BF /* College HackwichTests.xctest */,
+				3FB58F8D1C501D4D0025F1BF /* College HackwichUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FB58F701C501D4C0025F1BF /* College Hackwich */ = {
+			isa = PBXGroup;
+			children = (
+				3FB58F711C501D4C0025F1BF /* AppDelegate.swift */,
+				3FB58F731C501D4C0025F1BF /* ViewController.swift */,
+				3FB58F751C501D4C0025F1BF /* Main.storyboard */,
+				3FB58F781C501D4C0025F1BF /* Assets.xcassets */,
+				3FB58F7A1C501D4C0025F1BF /* LaunchScreen.storyboard */,
+				3FB58F7D1C501D4C0025F1BF /* Info.plist */,
+			);
+			path = "College Hackwich";
+			sourceTree = "<group>";
+		};
+		3FB58F851C501D4D0025F1BF /* College HackwichTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FB58F861C501D4D0025F1BF /* College_HackwichTests.swift */,
+				3FB58F881C501D4D0025F1BF /* Info.plist */,
+			);
+			path = "College HackwichTests";
+			sourceTree = "<group>";
+		};
+		3FB58F901C501D4D0025F1BF /* College HackwichUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FB58F911C501D4D0025F1BF /* College_HackwichUITests.swift */,
+				3FB58F931C501D4D0025F1BF /* Info.plist */,
+			);
+			path = "College HackwichUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FB58F6D1C501D4C0025F1BF /* College Hackwich */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB58F961C501D4D0025F1BF /* Build configuration list for PBXNativeTarget "College Hackwich" */;
+			buildPhases = (
+				3FB58F6A1C501D4C0025F1BF /* Sources */,
+				3FB58F6B1C501D4C0025F1BF /* Frameworks */,
+				3FB58F6C1C501D4C0025F1BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "College Hackwich";
+			productName = "College Hackwich";
+			productReference = 3FB58F6E1C501D4C0025F1BF /* College Hackwich.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FB58F811C501D4D0025F1BF /* College HackwichTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB58F991C501D4D0025F1BF /* Build configuration list for PBXNativeTarget "College HackwichTests" */;
+			buildPhases = (
+				3FB58F7E1C501D4D0025F1BF /* Sources */,
+				3FB58F7F1C501D4D0025F1BF /* Frameworks */,
+				3FB58F801C501D4D0025F1BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FB58F841C501D4D0025F1BF /* PBXTargetDependency */,
+			);
+			name = "College HackwichTests";
+			productName = "College HackwichTests";
+			productReference = 3FB58F821C501D4D0025F1BF /* College HackwichTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FB58F8C1C501D4D0025F1BF /* College HackwichUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB58F9C1C501D4D0025F1BF /* Build configuration list for PBXNativeTarget "College HackwichUITests" */;
+			buildPhases = (
+				3FB58F891C501D4D0025F1BF /* Sources */,
+				3FB58F8A1C501D4D0025F1BF /* Frameworks */,
+				3FB58F8B1C501D4D0025F1BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FB58F8F1C501D4D0025F1BF /* PBXTargetDependency */,
+			);
+			name = "College HackwichUITests";
+			productName = "College HackwichUITests";
+			productReference = 3FB58F8D1C501D4D0025F1BF /* College HackwichUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FB58F661C501D4C0025F1BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Matthew Wen";
+				TargetAttributes = {
+					3FB58F6D1C501D4C0025F1BF = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZA7232252K;
+					};
+					3FB58F811C501D4D0025F1BF = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZA7232252K;
+						TestTargetID = 3FB58F6D1C501D4C0025F1BF;
+					};
+					3FB58F8C1C501D4D0025F1BF = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ZA7232252K;
+						TestTargetID = 3FB58F6D1C501D4C0025F1BF;
+					};
+				};
+			};
+			buildConfigurationList = 3FB58F691C501D4C0025F1BF /* Build configuration list for PBXProject "College Hackwich" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FB58F651C501D4C0025F1BF;
+			productRefGroup = 3FB58F6F1C501D4C0025F1BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FB58F6D1C501D4C0025F1BF /* College Hackwich */,
+				3FB58F811C501D4D0025F1BF /* College HackwichTests */,
+				3FB58F8C1C501D4D0025F1BF /* College HackwichUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FB58F6C1C501D4C0025F1BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB58F7C1C501D4C0025F1BF /* LaunchScreen.storyboard in Resources */,
+				3FB58F791C501D4C0025F1BF /* Assets.xcassets in Resources */,
+				3FB58F771C501D4C0025F1BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB58F801C501D4D0025F1BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB58F8B1C501D4D0025F1BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FB58F6A1C501D4C0025F1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB58F741C501D4C0025F1BF /* ViewController.swift in Sources */,
+				3FB58F721C501D4C0025F1BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB58F7E1C501D4D0025F1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB58F871C501D4D0025F1BF /* College_HackwichTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB58F891C501D4D0025F1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB58F921C501D4D0025F1BF /* College_HackwichUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FB58F841C501D4D0025F1BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FB58F6D1C501D4C0025F1BF /* College Hackwich */;
+			targetProxy = 3FB58F831C501D4D0025F1BF /* PBXContainerItemProxy */;
+		};
+		3FB58F8F1C501D4D0025F1BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FB58F6D1C501D4C0025F1BF /* College Hackwich */;
+			targetProxy = 3FB58F8E1C501D4D0025F1BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FB58F751C501D4C0025F1BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB58F761C501D4C0025F1BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FB58F7A1C501D4C0025F1BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB58F7B1C501D4C0025F1BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FB58F941C501D4D0025F1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FB58F951C501D4D0025F1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FB58F971C501D4D0025F1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "College Hackwich/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iamattw.College-Hackwich";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3FB58F981C501D4D0025F1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "College Hackwich/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iamattw.College-Hackwich";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3FB58F9A1C501D4D0025F1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "College HackwichTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iamattw.College-HackwichTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/College Hackwich.app/College Hackwich";
+			};
+			name = Debug;
+		};
+		3FB58F9B1C501D4D0025F1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "College HackwichTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iamattw.College-HackwichTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/College Hackwich.app/College Hackwich";
+			};
+			name = Release;
+		};
+		3FB58F9D1C501D4D0025F1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "College HackwichUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iamattw.College-HackwichUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "College Hackwich";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3FB58F9E1C501D4D0025F1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "College HackwichUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iamattw.College-HackwichUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "College Hackwich";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FB58F691C501D4C0025F1BF /* Build configuration list for PBXProject "College Hackwich" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB58F941C501D4D0025F1BF /* Debug */,
+				3FB58F951C501D4D0025F1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB58F961C501D4D0025F1BF /* Build configuration list for PBXNativeTarget "College Hackwich" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB58F971C501D4D0025F1BF /* Debug */,
+				3FB58F981C501D4D0025F1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FB58F991C501D4D0025F1BF /* Build configuration list for PBXNativeTarget "College HackwichTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB58F9A1C501D4D0025F1BF /* Debug */,
+				3FB58F9B1C501D4D0025F1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FB58F9C1C501D4D0025F1BF /* Build configuration list for PBXNativeTarget "College HackwichUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB58F9D1C501D4D0025F1BF /* Debug */,
+				3FB58F9E1C501D4D0025F1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FB58F661C501D4C0025F1BF /* Project object */;
+}
