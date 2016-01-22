@@ -29,6 +29,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Zzc-W0-8XK" kind="show" id="wSp-ZD-ZnJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -65,6 +68,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1100" y="282"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Mpz-Dd-jN0">
+            <objects>
+                <viewController id="Zzc-W0-8XK" customClass="DetailViewController" customModule="College_Hackwich" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="URJ-vb-fq3"/>
+                        <viewControllerLayoutGuide type="bottom" id="P3S-2I-AYb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fjw-D1-pUt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Colleges" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-N3-07X">
+                                <rect key="frame" x="225" y="60" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfr-Uo-vgB">
+                                <rect key="frame" x="225" y="98" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="924-pD-OgK">
+                                <rect key="frame" x="175" y="136" width="250" height="150"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZZ-me-hrW">
+                                <rect key="frame" x="283" y="294" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onTappedSaveButton:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="9vP-Ar-wFS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="924-pD-OgK" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="HDw-xS-AAk"/>
+                            <constraint firstItem="pfr-Uo-vgB" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="LEk-bT-AiJ"/>
+                            <constraint firstItem="rZZ-me-hrW" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="mEL-w6-wxE"/>
+                            <constraint firstItem="QiA-N3-07X" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="nC0-bX-uLb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collegeTextField" destination="QiA-N3-07X" id="1FR-gP-zKb"/>
+                        <outlet property="imageView" destination="924-pD-OgK" id="PY5-yV-af7"/>
+                        <outlet property="stateTextField" destination="pfr-Uo-vgB" id="rjM-jY-SuS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUO-Dp-tA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="282"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mUG-Lf-rwt">

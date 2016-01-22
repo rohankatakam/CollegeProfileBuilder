@@ -15,6 +15,7 @@
 		3FB58F7C1C501D4C0025F1BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB58F7A1C501D4C0025F1BF /* LaunchScreen.storyboard */; };
 		3FB58F871C501D4D0025F1BF /* College_HackwichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB58F861C501D4D0025F1BF /* College_HackwichTests.swift */; };
 		3FB58F921C501D4D0025F1BF /* College_HackwichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB58F911C501D4D0025F1BF /* College_HackwichUITests.swift */; };
+		3FCC722F1C52AEE500BCAC89 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC722E1C52AEE500BCAC89 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3FB58F8D1C501D4D0025F1BF /* College HackwichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "College HackwichUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB58F911C501D4D0025F1BF /* College_HackwichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College_HackwichUITests.swift; sourceTree = "<group>"; };
 		3FB58F931C501D4D0025F1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCC722E1C52AEE500BCAC89 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				3FB58F711C501D4C0025F1BF /* AppDelegate.swift */,
 				3FB58F731C501D4C0025F1BF /* ViewController.swift */,
+				3FCC722E1C52AEE500BCAC89 /* DetailViewController.swift */,
 				3F8436E11C51775C00FBFD01 /* Colleges.swift */,
 				3FB58F751C501D4C0025F1BF /* Main.storyboard */,
 				3FB58F781C501D4C0025F1BF /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 				3FB58F741C501D4C0025F1BF /* ViewController.swift in Sources */,
 				3F8436E21C51775C00FBFD01 /* Colleges.swift in Sources */,
 				3FB58F721C501D4C0025F1BF /* AppDelegate.swift in Sources */,
+				3FCC722F1C52AEE500BCAC89 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
