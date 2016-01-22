@@ -14,11 +14,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
-    var colleges = ["Yale", "Harvard", "UIC"]
+    var colleges: [Colleges] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         editButton.tag = 0
+        
+        colleges.append(Colleges(name: "University of Chicago", state: "Illinois", image: UIImage(named: "Universty of Chicago")!))
     
     }
     //count # of table views to have
@@ -28,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //cell display city
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
-        cell.textLabel?.text = colleges[indexPath.row]
+        cell.textLabel?.text = colleges[indexPath.row].name
         return cell
     
     }
@@ -64,7 +66,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Add Button
         let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
             let collegeTextField = alert.textFields![0] as UITextField
-            self.colleges.append(collegeTextField.text!)
+            self.colleges.append(Colleges(name: collegeTextField.text!))
             self.tableView.reloadData()
         }
         
