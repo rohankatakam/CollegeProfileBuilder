@@ -20,9 +20,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         editButton.tag = 0
         
-        colleges.append(Colleges(name: "University of Chicago", state: "Illinois", image: UIImage(named: "Universty of Chicago")!))
+        //colleges.append(Colleges(name: "University of Chicago", state: "Illinois", image: UIImage(named: "Universty of Chicago")!))
     
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     //count # of table views to have
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colleges.count
