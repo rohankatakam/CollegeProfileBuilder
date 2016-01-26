@@ -20,6 +20,8 @@ class Colleges: NSObject {
         self.state = state
         self.population = numberOfStudents
         self.image = image
+       
+        
     }
     
     convenience init(name: String, state: String, numberOfStudents: Int){
@@ -27,6 +29,7 @@ class Colleges: NSObject {
         self.name = name
         self.state = state
         self.population = numberOfStudents
+        
     }
 }
 

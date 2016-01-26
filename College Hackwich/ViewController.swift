@@ -21,6 +21,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         editButton.tag = 0
         
         colleges.append(Colleges(name: "University of Chicago", state: "Illinois", numberOfStudents: 14770, image: UIImage(named: "UniverstyOfChicago")!))
+        colleges.append(Colleges(name: "Northwestern", state: "Illinois", numberOfStudents: 12345, image: UIImage(named: "UniversityOfChicago")!))
+        colleges.append(Colleges(name: "Standford", state: "California", numberOfStudents: 12345, image: UIImage(named: "UniversityOfChicago")!))
     
     }
     override func viewWillAppear(animated: Bool) {
@@ -36,6 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
         cell.textLabel?.text = colleges[indexPath.row].name
+        cell.detailTextLabel?.text = colleges[indexPath.row].state
         return cell
     
     }
@@ -49,7 +52,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         colleges.removeAtIndex(sourceIndexPath.row)
         colleges.insert(college, atIndex: destinationIndexPath.row)
     }
-    //
+    
     //Delete a cell
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
@@ -65,6 +68,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add College Here"
         }
+        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            textField.placeholder = "Add State Here"
+        }
+        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            textField.placeholder = "Add Population Here"
+            textField.keyboardType = UIKeyboardType.NumberPad
+        }
         //cancel Button
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         alert.addAction(cancelAction)
@@ -73,7 +83,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let collegeTextField = alert.textFields![0] as UITextField
             let stateTextField = alert.textFields![1] as UITextField
             let populationTextField = alert.textFields![2] as UITextField
-            //self.colleges.append(Colleges(name: collegeTextField.text!))
+            self.colleges.append(Colleges(name: collegeTextField.text!, state: stateTextField.text!, numberOfStudents: Int(populationTextField.text!)!))
             self.tableView.reloadData()
         }
         

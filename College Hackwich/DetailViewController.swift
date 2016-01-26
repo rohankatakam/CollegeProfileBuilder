@@ -15,16 +15,17 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var populationTextField: UITextField!
     
+    var location = ""
     var college: Colleges!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         collegeTextField.text = college.name
         stateTextField.text = college.state
         populationTextField.text = String(college.population)
         imageView.image = college.image
+        
         
     }
     //Tap the Save Button
