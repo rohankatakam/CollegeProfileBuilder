@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         editButton.tag = 0
         
-        //colleges.append(Colleges(name: "University of Chicago", state: "Illinois", image: UIImage(named: "Universty of Chicago")!))
+        colleges.append(Colleges(name: "University of Chicago", state: "Illinois", numberOfStudents: 14770, image: UIImage(named: "UniverstyOfChicago")!))
     
     }
     override func viewWillAppear(animated: Bool) {
@@ -71,7 +71,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Add Button
         let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
             let collegeTextField = alert.textFields![0] as UITextField
-            self.colleges.append(Colleges(name: collegeTextField.text!))
+            let stateTextField = alert.textFields![1] as UITextField
+            let populationTextField = alert.textFields![2] as UITextField
+            //self.colleges.append(Colleges(name: collegeTextField.text!))
             self.tableView.reloadData()
         }
         

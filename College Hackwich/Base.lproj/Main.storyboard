@@ -82,17 +82,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Colleges" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-N3-07X">
-                                <rect key="frame" x="225" y="124" width="150" height="30"/>
+                                <rect key="frame" x="225" y="95" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfr-Uo-vgB">
-                                <rect key="frame" x="225" y="162" width="150" height="30"/>
+                                <rect key="frame" x="225" y="133" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="924-pD-OgK">
-                                <rect key="frame" x="175" y="200" width="250" height="150"/>
+                                <rect key="frame" x="175" y="225" width="250" height="150"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZZ-me-hrW">
                                 <rect key="frame" x="283" y="473" width="34" height="30"/>
@@ -101,9 +101,15 @@
                                     <action selector="onTappedSaveButton:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="9vP-Ar-wFS"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Population" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-8e-etu">
+                                <rect key="frame" x="225" y="171" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="AOQ-8e-etu" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="3tx-Sl-2AH"/>
                             <constraint firstItem="924-pD-OgK" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="HDw-xS-AAk"/>
                             <constraint firstItem="pfr-Uo-vgB" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="LEk-bT-AiJ"/>
                             <constraint firstItem="rZZ-me-hrW" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="mEL-w6-wxE"/>
@@ -113,6 +119,7 @@
                     <connections>
                         <outlet property="collegeTextField" destination="QiA-N3-07X" id="1FR-gP-zKb"/>
                         <outlet property="imageView" destination="924-pD-OgK" id="PY5-yV-af7"/>
+                        <outlet property="populationTextField" destination="AOQ-8e-etu" id="1Mf-Ut-TBn"/>
                         <outlet property="stateTextField" destination="pfr-Uo-vgB" id="rjM-jY-SuS"/>
                     </connections>
                 </viewController>
