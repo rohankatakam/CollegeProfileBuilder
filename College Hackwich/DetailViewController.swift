@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         collegeTextField.text = college.name
-        stateTextField.text = college.state
+        stateTextField.text = college.location
         populationTextField.text = String(college.population)
         imageView.image = college.image
         
@@ -31,9 +31,16 @@ class DetailViewController: UIViewController {
     //Tap the Save Button
     @IBAction func onTappedSaveButton(sender: UIButton) {
         college.name = collegeTextField.text!
-        college.state = stateTextField.text!
+        college.location = stateTextField.text!
         college.image = imageView.image
         college.population = Int(populationTextField.text!)!
+    }
+    
+    @IBAction func tapOpenSpace(sender: AnyObject) {
+        collegeTextField.resignFirstResponder()
+        stateTextField.resignFirstResponder()
+        populationTextField.resignFirstResponder()
+
     }
 
     

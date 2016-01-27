@@ -20,9 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         editButton.tag = 0
         
-        colleges.append(Colleges(name: "University of Chicago", state: "Illinois", numberOfStudents: 14770, image: UIImage(named: "UniverstyOfChicago")!))
-        colleges.append(Colleges(name: "Northwestern", state: "Illinois", numberOfStudents: 12345, image: UIImage(named: "UniversityOfChicago")!))
-        colleges.append(Colleges(name: "Standford", state: "California", numberOfStudents: 12345, image: UIImage(named: "UniversityOfChicago")!))
+        colleges.append(Colleges(name: "University of Chicago", location: "Chicago,IL", numberOfStudents: 14770, image: UIImage(named: "UniverstyOfChicago")!))
+        colleges.append(Colleges(name: "Northwestern", location: "Chicago,IL", numberOfStudents: 20336, image: UIImage(named: "NorthWestern")!))
+        colleges.append(Colleges(name: "Standford", location: "San Francisco,CA", numberOfStudents: 16136, image: UIImage(named: "StanFord")!))
     
     }
     override func viewWillAppear(animated: Bool) {
@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
         cell.textLabel?.text = colleges[indexPath.row].name
-        cell.detailTextLabel?.text = colleges[indexPath.row].state
+        cell.detailTextLabel?.text = colleges[indexPath.row].location
         return cell
     
     }
@@ -76,15 +76,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             textField.keyboardType = UIKeyboardType.NumberPad
         }
         //cancel Button
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        //let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+            alert.textFields![0].resignFirstResponder()
+        }
         alert.addAction(cancelAction)
         //Add Button
         let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
             let collegeTextField = alert.textFields![0] as UITextField
             let stateTextField = alert.textFields![1] as UITextField
             let populationTextField = alert.textFields![2] as UITextField
-            self.colleges.append(Colleges(name: collegeTextField.text!, state: stateTextField.text!, numberOfStudents: Int(populationTextField.text!)!))
+            self.colleges.append(Colleges(name: collegeTextField.text!, location: stateTextField.text!, numberOfStudents: Int(populationTextField.text!)!))
             self.tableView.reloadData()
+           
         }
         
         alert.addAction(addAction)

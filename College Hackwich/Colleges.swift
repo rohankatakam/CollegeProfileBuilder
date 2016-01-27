@@ -10,24 +10,24 @@ import UIKit
 
 class Colleges: NSObject {
     var name = ""
-    var state = ""
+    var location = ""
     var population = 0
     var image = UIImage(named: "Default")
     
-    convenience init(name: String, state: String, numberOfStudents: Int, image: UIImage){
+    convenience init(name: String, location: String, numberOfStudents: Int, image: UIImage){
         self.init()
         self.name = name
-        self.state = state
+        self.location = location
         self.population = numberOfStudents
         self.image = image
        
         
     }
     
-    convenience init(name: String, state: String, numberOfStudents: Int){
+    convenience init(name: String, location: String, numberOfStudents: Int){
         self.init()
         self.name = name
-        self.state = state
+        self.location = location
         self.population = numberOfStudents
         
     }
