@@ -11,14 +11,14 @@ import UIKit
 class Colleges: NSObject {
     var name = ""
     var location = ""
-    var population = 0
+    var numberOfStudents = 0
     var image = UIImage(named: "Default")
     
     convenience init(name: String, location: String, numberOfStudents: Int, image: UIImage){
         self.init()
         self.name = name
         self.location = location
-        self.population = numberOfStudents
+        self.numberOfStudents = numberOfStudents
         self.image = image
        
         
@@ -28,7 +28,7 @@ class Colleges: NSObject {
         self.init()
         self.name = name
         self.location = location
-        self.population = numberOfStudents
+        self.numberOfStudents = numberOfStudents
         
     }
 }

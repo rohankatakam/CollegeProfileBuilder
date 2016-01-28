@@ -69,10 +69,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             textField.placeholder = "Add College Here"
         }
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.placeholder = "Add State Here"
+            textField.placeholder = "Add Location Here"
         }
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.placeholder = "Add Population Here"
+            textField.placeholder = "Add Number of Students Here"
             textField.keyboardType = UIKeyboardType.NumberPad
         }
         //cancel Button
@@ -84,9 +84,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Add Button
         let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
             let collegeTextField = alert.textFields![0] as UITextField
-            let stateTextField = alert.textFields![1] as UITextField
+            let locationTextField = alert.textFields![1] as UITextField
             let populationTextField = alert.textFields![2] as UITextField
-            self.colleges.append(Colleges(name: collegeTextField.text!, location: stateTextField.text!, numberOfStudents: Int(populationTextField.text!)!))
+            //self.colleges.append(Colleges(name: collegeTextField.text!, location: locationTextField.text!, numberOfStudents: Int(populationTextField.text!)!))
+            self.colleges.append(Colleges(name: collegeTextField.text!, location: locationTextField.text!, numberOfStudents: Int(populationTextField.text!)!, image: UIImage(named: "School")!))
             self.tableView.reloadData()
            
         }

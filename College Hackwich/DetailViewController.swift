@@ -23,7 +23,7 @@ class DetailViewController: UIViewController {
         
         collegeTextField.text = college.name
         stateTextField.text = college.location
-        populationTextField.text = String(college.population)
+        populationTextField.text = String(college.numberOfStudents)
         imageView.image = college.image
         
         
@@ -33,7 +33,7 @@ class DetailViewController: UIViewController {
         college.name = collegeTextField.text!
         college.location = stateTextField.text!
         college.image = imageView.image
-        college.population = Int(populationTextField.text!)!
+        college.numberOfStudents = Int(populationTextField.text!)!
     }
     
     @IBAction func tapOpenSpace(sender: AnyObject) {
