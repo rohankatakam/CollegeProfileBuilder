@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         colleges.append(Colleges(name: "University of Chicago", location: "Chicago,IL", numberOfStudents: 14770, image: UIImage(named: "UniverstyOfChicago")!))
         colleges.append(Colleges(name: "Northwestern", location: "Chicago,IL", numberOfStudents: 20336, image: UIImage(named: "NorthWestern")!))
-        colleges.append(Colleges(name: "Standford", location: "San Francisco,CA", numberOfStudents: 16136, image: UIImage(named: "StanFord")!))
+        colleges.append(Colleges(name: "Stanford", location: "San Francisco,CA", numberOfStudents: 16136, image: UIImage(named: "StanFord")!))
     
     }
     override func viewWillAppear(animated: Bool) {
