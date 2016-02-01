@@ -107,28 +107,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZZ-me-hrW">
-                                <rect key="frame" x="283" y="209" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="onTappedSaveButton:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="9vP-Ar-wFS"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Student" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-8e-etu">
                                 <rect key="frame" x="225" y="171" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="924-pD-OgK">
-                                <rect key="frame" x="175" y="247" width="250" height="150"/>
+                                <rect key="frame" x="175" y="318" width="250" height="150"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL of School" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-uN-nnQ">
+                                <rect key="frame" x="225" y="214" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueg-LH-SWr">
+                                <rect key="frame" x="249" y="252" width="102" height="30"/>
+                                <state key="normal" title="Go To WebSite"/>
+                                <connections>
+                                    <action selector="goToWebSite:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="WVP-fj-CFq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZZ-me-hrW">
+                                <rect key="frame" x="283" y="280" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onTappedSaveButton:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="9vP-Ar-wFS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="AOQ-8e-etu" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="3tx-Sl-2AH"/>
+                            <constraint firstItem="aCY-uN-nnQ" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="ASy-r2-HMS"/>
                             <constraint firstItem="924-pD-OgK" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="HDw-xS-AAk"/>
                             <constraint firstItem="pfr-Uo-vgB" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="LEk-bT-AiJ"/>
+                            <constraint firstItem="Ueg-LH-SWr" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="heo-o9-G3u"/>
                             <constraint firstItem="rZZ-me-hrW" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="mEL-w6-wxE"/>
                             <constraint firstItem="QiA-N3-07X" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="nC0-bX-uLb"/>
                         </constraints>
@@ -141,6 +155,7 @@
                         <outlet property="imageView" destination="924-pD-OgK" id="PY5-yV-af7"/>
                         <outlet property="populationTextField" destination="AOQ-8e-etu" id="1Mf-Ut-TBn"/>
                         <outlet property="stateTextField" destination="pfr-Uo-vgB" id="rjM-jY-SuS"/>
+                        <outlet property="urlOfSchool" destination="aCY-uN-nnQ" id="P3h-i8-3Na"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUO-Dp-tA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
