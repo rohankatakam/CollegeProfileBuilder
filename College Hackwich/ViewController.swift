@@ -20,9 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         editButton.tag = 0
         
-        colleges.append(Colleges(name: "University of Chicago", location: "Chicago,IL", numberOfStudents: 14770, collegeSite: "http://google.com", image: UIImage(named: "UniverstyOfChicago")!))
-        colleges.append(Colleges(name: "Northwestern", location: "Chicago,IL", numberOfStudents: 20336, collegeSite: "http://www.google.com", image: UIImage(named: "NorthWestern")!))
-        colleges.append(Colleges(name: "Stanford", location: "San Francisco,CA", numberOfStudents: 16136, collegeSite: "http://google.com", image: UIImage(named: "StanFord")!))
+        colleges.append(Colleges(name: "University of Chicago", location: "Chicago,IL", numberOfStudents: 14770, collegeSite: "http://www.uchicago.edu", image: UIImage(named: "UniverstyOfChicago")!))
+        colleges.append(Colleges(name: "Northwestern", location: "Chicago,IL", numberOfStudents: 20336, collegeSite: "http://www.northwestern.edu", image: UIImage(named: "NorthWestern")!))
+        colleges.append(Colleges(name: "Stanford", location: "San Francisco,CA", numberOfStudents: 16136, collegeSite: "http://www.stanford.edu", image: UIImage(named: "StanFord")!))
     
     }
     override func viewWillAppear(animated: Bool) {
@@ -77,6 +77,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add URL of College Here"
+            textField.text = "http://"
         }
         //cancel Button
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
