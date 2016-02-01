@@ -21,7 +21,7 @@ class Colleges: NSObject {
         self.location = location
         self.numberOfStudents = numberOfStudents
         self.image = image
-        self.collegeSite = "http://\(collegeSite)"
+        self.collegeSite = collegeSite
        
         
     }
@@ -31,7 +31,7 @@ class Colleges: NSObject {
         self.name = name
         self.location = location
         self.numberOfStudents = numberOfStudents
-        self.collegeSite = "http://\(collegeSite)"
+        self.collegeSite = collegeSite
     }
 }
 

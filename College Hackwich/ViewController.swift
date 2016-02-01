@@ -20,9 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         editButton.tag = 0
         
-        colleges.append(Colleges(name: "University of Chicago", location: "Chicago,IL", numberOfStudents: 14770, collegeSite: "google.com", image: UIImage(named: "UniverstyOfChicago")!))
-        colleges.append(Colleges(name: "Northwestern", location: "Chicago,IL", numberOfStudents: 20336, collegeSite: "google.com", image: UIImage(named: "NorthWestern")!))
-        colleges.append(Colleges(name: "Stanford", location: "San Francisco,CA", numberOfStudents: 16136, collegeSite: "google.com", image: UIImage(named: "StanFord")!))
+        colleges.append(Colleges(name: "University of Chicago", location: "Chicago,IL", numberOfStudents: 14770, collegeSite: "http://google.com", image: UIImage(named: "UniverstyOfChicago")!))
+        colleges.append(Colleges(name: "Northwestern", location: "Chicago,IL", numberOfStudents: 20336, collegeSite: "http://www.google.com", image: UIImage(named: "NorthWestern")!))
+        colleges.append(Colleges(name: "Stanford", location: "San Francisco,CA", numberOfStudents: 16136, collegeSite: "http://google.com", image: UIImage(named: "StanFord")!))
     
     }
     override func viewWillAppear(animated: Bool) {
