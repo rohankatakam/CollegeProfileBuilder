@@ -97,54 +97,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="College Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-N3-07X">
-                                <rect key="frame" x="225" y="95" width="150" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfr-Uo-vgB">
-                                <rect key="frame" x="225" y="133" width="150" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Student" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-8e-etu">
-                                <rect key="frame" x="225" y="171" width="150" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="924-pD-OgK">
-                                <rect key="frame" x="175" y="318" width="250" height="150"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL of School" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-uN-nnQ">
-                                <rect key="frame" x="225" y="214" width="150" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueg-LH-SWr">
-                                <rect key="frame" x="249" y="252" width="102" height="30"/>
-                                <state key="normal" title="Go To WebSite"/>
-                                <connections>
-                                    <action selector="goToWebSite:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="WVP-fj-CFq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZZ-me-hrW">
-                                <rect key="frame" x="283" y="280" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="onTappedSaveButton:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="9vP-Ar-wFS"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rr2-hc-m77">
+                                <rect key="frame" x="210" y="89" width="180" height="193"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="College Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-N3-07X">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfr-Uo-vgB">
+                                        <rect key="frame" x="0.0" y="38" width="150" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Student" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-8e-etu">
+                                        <rect key="frame" x="0.0" y="76" width="150" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL of School" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aCY-uN-nnQ">
+                                        <rect key="frame" x="0.0" y="117" width="150" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueg-LH-SWr">
+                                        <rect key="frame" x="150" y="117" width="30" height="30"/>
+                                        <state key="normal" title="Go"/>
+                                        <connections>
+                                            <action selector="goToWebSite:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="WVP-fj-CFq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZZ-me-hrW">
+                                        <rect key="frame" x="58" y="155" width="34" height="30"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="onTappedSaveButton:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="9vP-Ar-wFS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brV-na-oMG">
+                                <rect key="frame" x="166" y="290" width="268" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22J-wT-bb1">
+                                        <rect key="frame" x="201" y="0.0" width="54" height="30"/>
+                                        <state key="normal" title="Camera"/>
+                                        <connections>
+                                            <action selector="onTappedToCamera:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="XeN-Ft-5FF"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="924-pD-OgK">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-pu-FoM">
+                                        <rect key="frame" x="201" y="28" width="48" height="30"/>
+                                        <state key="normal" title="Library"/>
+                                        <connections>
+                                            <action selector="onTappedToLibrary:" destination="Zzc-W0-8XK" eventType="touchUpInside" id="Qt1-SI-peZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="AOQ-8e-etu" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="3tx-Sl-2AH"/>
-                            <constraint firstItem="aCY-uN-nnQ" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="ASy-r2-HMS"/>
-                            <constraint firstItem="924-pD-OgK" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="HDw-xS-AAk"/>
-                            <constraint firstItem="pfr-Uo-vgB" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="LEk-bT-AiJ"/>
-                            <constraint firstItem="Ueg-LH-SWr" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="heo-o9-G3u"/>
-                            <constraint firstItem="rZZ-me-hrW" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="mEL-w6-wxE"/>
-                            <constraint firstItem="QiA-N3-07X" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="nC0-bX-uLb"/>
+                            <constraint firstItem="rr2-hc-m77" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="8ON-aC-FfA"/>
+                            <constraint firstItem="brV-na-oMG" firstAttribute="centerX" secondItem="fjw-D1-pUt" secondAttribute="centerX" id="vaz-nX-hEN"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Njb-ag-QWQ" appends="YES" id="TcN-sr-XKT"/>

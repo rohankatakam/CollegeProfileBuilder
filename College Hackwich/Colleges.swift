@@ -13,7 +13,7 @@ class Colleges: NSObject {
     var location = ""
     var numberOfStudents = 0
     var image = UIImage(named: "Default")
-    var collegeSite = "http://"
+    var collegeSite = ""
     
     convenience init(name: String, location: String, numberOfStudents: Int, collegeSite: String, image: UIImage){
         self.init()

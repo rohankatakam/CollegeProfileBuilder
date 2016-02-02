@@ -39,7 +39,7 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate {
         college.numberOfStudents = Int(populationTextField.text!)!
         college.collegeSite = urlOfSchool.text!
     }
-    
+    //Tap open space
     @IBAction func tapOpenSpace(sender: AnyObject) {
         collegeTextField.resignFirstResponder()
         stateTextField.resignFirstResponder()
@@ -47,12 +47,19 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate {
         urlOfSchool.resignFirstResponder()
 
     }
-
+    //Button that open website
     @IBAction func goToWebSite(sender: AnyObject) {
         let url = NSURL(string: urlOfSchool.text!)
         let svc = SFSafariViewController(URL: url!)
         svc.delegate = self
         self.presentViewController(svc, animated: true, completion: nil)
+    }
+    //to Camra Button
+    @IBAction func onTappedToCamera(sender: AnyObject) {
+        
+    }
+    @IBAction func onTappedToLibrary(sender: AnyObject) {
+        
     }
     
 
