@@ -77,7 +77,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add URL of College Here"
-            textField.text = "http://"
+            //textField.text = "http://"
         }
         //cancel Button
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
