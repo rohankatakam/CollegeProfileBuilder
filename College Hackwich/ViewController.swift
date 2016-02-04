@@ -77,6 +77,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add URL of College Here"
+            textField.keyboardType = UIKeyboardType.URL
             //textField.text = "http://"
         }
         //cancel Button
