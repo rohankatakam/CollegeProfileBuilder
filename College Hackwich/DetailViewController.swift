@@ -76,6 +76,7 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         presentViewController(imagePicker, animated: true, completion: nil)
     }
-    
+       
 
 }
+

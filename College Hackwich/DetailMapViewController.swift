@@ -14,12 +14,12 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var locatonTextField: UITextField!
     
-    var college = Colleges()
+    var college: Colleges!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         locatonTextField.delegate = self
-        findLocation(college.location)
+        findLocation("Barrington, IL")
         
         
     }
@@ -74,8 +74,7 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-
-    @IBAction func doneButtonOnTap(sender: AnyObject) {
+    @IBAction func onDone(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
    
