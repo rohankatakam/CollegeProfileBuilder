@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F55F4351C6EB95C0031C84F /* DetailMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55F4341C6EB95C0031C84F /* DetailMapViewController.swift */; };
 		3F8436E21C51775C00FBFD01 /* Colleges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8436E11C51775C00FBFD01 /* Colleges.swift */; };
 		3FB58F721C501D4C0025F1BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB58F711C501D4C0025F1BF /* AppDelegate.swift */; };
 		3FB58F741C501D4C0025F1BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB58F731C501D4C0025F1BF /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F55F4341C6EB95C0031C84F /* DetailMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMapViewController.swift; sourceTree = "<group>"; };
 		3F8436E11C51775C00FBFD01 /* Colleges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colleges.swift; sourceTree = "<group>"; };
 		3FB58F6E1C501D4C0025F1BF /* College Hackwich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "College Hackwich.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB58F711C501D4C0025F1BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3FCC722E1C52AEE500BCAC89 /* DetailViewController.swift */,
 				3F8436E11C51775C00FBFD01 /* Colleges.swift */,
 				3FB58F751C501D4C0025F1BF /* Main.storyboard */,
+				3F55F4341C6EB95C0031C84F /* DetailMapViewController.swift */,
 				3FB58F781C501D4C0025F1BF /* Assets.xcassets */,
 				3FB58F7A1C501D4C0025F1BF /* LaunchScreen.storyboard */,
 				3FB58F7D1C501D4C0025F1BF /* Info.plist */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB58F741C501D4C0025F1BF /* ViewController.swift in Sources */,
+				3F55F4351C6EB95C0031C84F /* DetailMapViewController.swift in Sources */,
 				3F8436E21C51775C00FBFD01 /* Colleges.swift in Sources */,
 				3FB58F721C501D4C0025F1BF /* AppDelegate.swift in Sources */,
 				3FCC722F1C52AEE500BCAC89 /* DetailViewController.swift in Sources */,

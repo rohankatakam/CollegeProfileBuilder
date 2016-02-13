@@ -22,8 +22,6 @@ class Colleges: NSObject {
         self.numberOfStudents = numberOfStudents
         self.image = image
         self.collegeSite = collegeSite
-       
-        
     }
     
     convenience init(name: String, location: String, numberOfStudents: Int, collegeSite: String){

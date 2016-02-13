@@ -99,6 +99,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
     //Tap the Edit Button
     @IBAction func onTappedEditButton(sender: UIBarButtonItem) {
         if sender.tag == 0{
@@ -111,6 +112,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     
     }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let dvc = segue.destinationViewController as! DetailViewController
         let index = tableView.indexPathForSelectedRow?.row
