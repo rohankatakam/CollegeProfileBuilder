@@ -76,7 +76,11 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         presentViewController(imagePicker, animated: true, completion: nil)
     }
-       
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! DetailMapViewController
+        dvc.college = self.college
+    }
 }
+
 

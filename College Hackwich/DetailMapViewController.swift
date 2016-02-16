@@ -18,8 +18,9 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated:true)
         locatonTextField.delegate = self
-        findLocation("Barrington, IL")
+        findLocation(college.location)
         
         
     }
@@ -74,8 +75,6 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func onDone(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-   
+    
+
 }
