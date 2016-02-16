@@ -116,7 +116,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mSs-Ok-sH6">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="HtO-iQ-5Pj"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="HtO-iQ-5Pj">
+                            <connections>
+                                <segue destination="Zzc-W0-8XK" kind="show" id="5IN-qr-0SK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="locatonTextField" destination="QHa-l1-MaV" id="3p5-eN-9rB"/>
@@ -267,7 +271,6 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="hJh-zE-stD" kind="relationship" relationship="rootViewController" id="IH8-ta-Zde"/>
-                        <segue destination="Zzc-W0-8XK" kind="show" id="OIv-Zo-SpB"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zd8-Q5-08I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,7 +279,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OIv-Zo-SpB"/>
+        <segue reference="5IN-qr-0SK"/>
         <segue reference="IH8-ta-Zde"/>
     </inferredMetricsTieBreakers>
 </document>

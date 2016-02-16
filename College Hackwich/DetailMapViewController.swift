@@ -74,6 +74,10 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
             
         }
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as!  DetailViewController
+        dvc.college = self.college
+    }
     
     
 
