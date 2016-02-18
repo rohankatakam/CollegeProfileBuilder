@@ -25,9 +25,10 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
         
     }
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        college.location = locatonTextField.text!
+        let locationName = locatonTextField.text!
         textField.resignFirstResponder()
-        findLocation(college.location)
+        findLocation(locationName)
+        college.location = locatonTextField.text!
         return true
     }
     
@@ -75,9 +76,4 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
         }
     }
    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dvc = segue.destinationViewController as! DetailViewController
-        dvc.college = self.college
-    }
-
 }
