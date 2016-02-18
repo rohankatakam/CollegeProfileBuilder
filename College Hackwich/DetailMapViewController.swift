@@ -6,6 +6,7 @@
 //  Copyright © 2016 Matthew Wen. All rights reserved.
 //
 
+
 import UIKit
 import MapKit
 
@@ -18,16 +19,15 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated:true)
         locatonTextField.delegate = self
         findLocation(college.location)
         
         
     }
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        let locationName = locatonTextField.text!
+        college.location = locatonTextField.text!
         textField.resignFirstResponder()
-        findLocation(locationName)
+        findLocation(college.location)
         return true
     }
     
@@ -74,11 +74,10 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
             
         }
     }
+   
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dvc = segue.destinationViewController as!  DetailViewController
+        let dvc = segue.destinationViewController as! DetailViewController
         dvc.college = self.college
     }
-    
-    
 
 }

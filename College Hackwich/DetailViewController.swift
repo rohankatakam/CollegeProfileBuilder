@@ -29,6 +29,7 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
         populationTextField.text = String(college.numberOfStudents)
         imageView.image = college.image
         urlOfSchool.text = college.collegeSite
+
         
         imagePicker.delegate = self
         //imageView.image = UIImage(named: "")
@@ -40,6 +41,7 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
             self.imageView.image = selectedImage
         }
     }
+    
     
     //Tap the Save Button
     @IBAction func onTappedSaveButton(sender: UIButton) {
@@ -76,11 +78,18 @@ class DetailViewController: UIViewController,SFSafariViewControllerDelegate, UII
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         presentViewController(imagePicker, animated: true, completion: nil)
     }
+   
+    //to press go button
+    @IBAction func goButtonOnTapped(sender: AnyObject) {
+        college.location = stateTextField.text!
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let dvc = segue.destinationViewController as! DetailMapViewController
         dvc.college = self.college
     }
+
+
 }
 
 
