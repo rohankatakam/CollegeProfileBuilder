@@ -28,7 +28,6 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
         let locationName = locatonTextField.text!
         textField.resignFirstResponder()
         findLocation(locationName)
-        college.location = locatonTextField.text!
         return true
     }
     
@@ -75,5 +74,4 @@ class DetailMapViewController: UIViewController, UITextFieldDelegate {
             
         }
     }
-   
 }
