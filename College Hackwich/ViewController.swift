@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  College Hackwich
+//  CollegeProfileBuilder
 //
-//  Created by MWen1 on 1/20/16.
-//  Copyright © 2016 Matthew Wen. All rights reserved.
+//  Created by rkatakam on 1/20/16.
+//  Copyright © 2016 Rohan Katakam. All rights reserved.
 //
 
 import UIKit
@@ -20,9 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         editButton.tag = 0
         
-        colleges.append(Colleges(name: "University of Chicago", location: "Chicago,IL", numberOfStudents: 14770, collegeSite: "http://www.uchicago.edu", image: UIImage(named: "UniverstyOfChicago")!))
-        colleges.append(Colleges(name: "Northwestern", location: "Chicago,IL", numberOfStudents: 20336, collegeSite: "http://www.northwestern.edu", image: UIImage(named: "NorthWestern")!))
-        colleges.append(Colleges(name: "Stanford", location: "San Francisco,CA", numberOfStudents: 16136, collegeSite: "http://www.stanford.edu", image: UIImage(named: "StanFord")!))
+        colleges.append(Colleges(name: "University of Illinois", location: "Champaign, IL", numberOfStudents: 44087, collegeSite: "http://www.http://illinois.edu/", image: UIImage(named: "uofi")!))
+        colleges.append(Colleges(name: "UC Berkeley", location: "Berkeley, CA", numberOfStudents: 37581, collegeSite: "http://www.berkeley.edu/", image: UIImage(named: "berkeley")!))
+        colleges.append(Colleges(name: "Stanford", location: "Stanford, CA", numberOfStudents: 16136, collegeSite: "http://www.stanford.edu", image: UIImage(named: "Stanford")!))
     
     }
     override func viewWillAppear(animated: Bool) {
@@ -30,11 +30,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.reloadData()
     }
     
-    //count # of table views to have
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colleges.count
     }
-    //cell display city
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
         cell.textLabel?.text = colleges[indexPath.row].name
@@ -42,18 +41,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     
     }
-    //allow table view to be editied
+
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
-    //allows the table view to be moved around 
+
     func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
         let college = colleges[sourceIndexPath.row]
         colleges.removeAtIndex(sourceIndexPath.row)
         colleges.insert(college, atIndex: destinationIndexPath.row)
     }
     
-    //Delete a cell
+
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             colleges.removeAtIndex(indexPath.row)
@@ -61,7 +60,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
     }
-    //Tap the plus button
+
     @IBAction func onTappedPlusButton(sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Add College", message: nil, preferredStyle: .Alert)
         //textfield
@@ -100,7 +99,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
-    //Tap the Edit Button
+
     @IBAction func onTappedEditButton(sender: UIBarButtonItem) {
         if sender.tag == 0{
             tableView.editing = true

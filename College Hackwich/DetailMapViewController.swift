@@ -1,9 +1,9 @@
 //
 //  DetailMapViewController.swift
-//  College Hackwich
+//  CollegeProfileBuilder
 //
-//  Created by MWen1 on 2/12/16.
-//  Copyright © 2016 Matthew Wen. All rights reserved.
+//  Created by rkatakam on 1/20/16.
+//  Copyright © 2016 Rohan Katakam. All rights reserved.
 //
 
 
